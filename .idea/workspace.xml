@@ -4,28 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1f126de-d075-42c5-b3c4-63f608ea8a8f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/base/OperationInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/base/OperationProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/base/OperationResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/example/bff/domain/bffclient/StorageRestClientFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/example/bff/domain/bffclient/ZooStoreRestClientFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/persistence/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest/pom.xml" afterDir="false" />
+    <list default="true" id="b1f126de-d075-42c5-b3c4-63f608ea8a8f" name="Changes" comment="BFF ZooStore updates">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/getItemProperties/GetItemPropertiesInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/getItemProperties/GetItemPropertiesOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/getItemProperties/GetItemPropertiesOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/GetItemPropertiesOperationProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/exceptions/NoSuchItemException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/src/main/java/com/example/bff/rest/BFFApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/src/main/java/com/example/bff/rest/contollers/BFFController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/example/bff/domain/bffclient/StorageRestClientFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/example/bff/domain/bffclient/StorageRestClientFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/example/bff/domain/bffclient/ZooStoreRestClientFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/example/bff/domain/bffclient/ZooStoreRestClientFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -43,23 +50,58 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "a9115ae134acfb491392ae6b1804d98d",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/KARA/IdeaProject/BFF/rest/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;fe2b5a0e6c12a0f727a6ac66a5c2a23d&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\KARA\IdeaProject\BFF\rest\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.bff.core.exceptions" />
+      <recent name="com.example.bff.core" />
+    </key>
+  </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean" />
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="BFFApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="rest" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.bff.rest.BFFApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.bff.rest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.BFFApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -71,10 +113,38 @@
       <updated>1690204556081</updated>
       <workItem from="1690204557149" duration="895000" />
       <workItem from="1690205619617" duration="2135000" />
+      <workItem from="1690207825698" duration="687000" />
+      <workItem from="1690266562011" duration="4778000" />
+      <workItem from="1690273972768" duration="4290000" />
+      <workItem from="1690358002998" duration="616000" />
     </task>
+    <task id="LOCAL-00001" summary="BFF ZooStore updates">
+      <option name="closed" value="true" />
+      <created>1690208483854</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690208483854</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="BFF ZooStore updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="BFF ZooStore updates" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core/src/main/java/com/example/bff/core/GetItemPropertiesOperationProcessor.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

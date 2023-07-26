@@ -14,8 +14,9 @@ import org.springframework.context.annotation.Configuration;
 @RequiredArgsConstructor
 public class ZooStoreRestClientFactory {
     @Bean
-    ZooStoreRestClient getRestExportClient() {
+    ZooStoreRestClient getZooStoreRestExportClient() {
         final ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.findAndRegisterModules();
         return Feign.builder()
                 .encoder(new JacksonEncoder(objectMapper))
                 .decoder(new JacksonDecoder(objectMapper))
