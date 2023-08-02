@@ -1,6 +1,6 @@
-package com.example.bff.api.getItemProperties;
+package com.example.bff.api.operations.item.getItemProperties;
 
-import com.example.bff.api.base.OperationInput;
+import com.example.bff.api.operations.base.OperationInput;
 import jakarta.validation.constraints.NotBlank;
 import lombok.*;
 
@@ -9,7 +9,7 @@ import lombok.*;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class GetItemPropertiesInput implements OperationInput {
+public class GetFullItemPropertiesInput implements OperationInput {
 
     @NotBlank(message = "Item id must not be blank!")
     private String itemId;

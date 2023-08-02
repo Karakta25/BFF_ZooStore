@@ -24,5 +24,10 @@
             <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
+        <dependency>
+            <groupId>com.example.zoostore</groupId>
+            <artifactId>api</artifactId>
+            <version>${zoostore.version}</version>
+        </dependency>
     </dependencies>
 </project>

@@ -27,7 +27,16 @@
             <groupId>com.example.bff</groupId>
             <artifactId>domain</artifactId>
             <version>${revision}</version>
-
+        </dependency>
+        <dependency>
+            <groupId>com.example.bff</groupId>
+            <artifactId>persistence</artifactId>
+            <version>${revision}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt</artifactId>
+            <version>0.9.1</version>
         </dependency>
     </dependencies>
 

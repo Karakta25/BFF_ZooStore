@@ -5,21 +5,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1f126de-d075-42c5-b3c4-63f608ea8a8f" name="Changes" comment="BFF ZooStore updates">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/getItemProperties/GetItemPropertiesInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/getItemProperties/GetItemPropertiesOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/getItemProperties/GetItemPropertiesOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/GetItemPropertiesOperationProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/exceptions/NoSuchItemException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest/src/main/java/com/example/bff/rest/BFFApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest/src/main/java/com/example/bff/rest/contollers/BFFController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/item/getItemsByTagTitle/GetItemsListByTagTitleInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/item/getItemsByTagTitle/GetItemsListByTagTitleOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/item/getItemsByTagTitle/GetItemsListByTagTitleOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/user/changePassword/ChangePasswordInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/user/changePassword/ChangePasswordOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/user/changePassword/ChangePasswordOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/user/changeUserProperties/ChangeUserPropertiesInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/user/changeUserProperties/ChangeUserPropertiesOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/user/changeUserProperties/ChangeUserPropertiesOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/user/logInUser/LogInUserInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/user/logInUser/LogInUserOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/user/logInUser/LogInUserOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/user/registerUser/RegisterUserInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/user/registerUser/RegisterUserOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/user/registerUser/RegisterUserOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/exceptions/NoSuchTagException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/exceptions/NoSuchUserException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/exceptions/UserAlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/exceptions/WrongUserEmailException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/exceptions/WrongUserPasswordException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/ChangePasswordOperationProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/ChangeUserPropertiesOperationProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/GetItemsListByTagTitleOperationProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/RegisterUserOperationProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/authentication/ApplicationUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/authentication/JwtService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/authentication/LogInOperationProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/bff/persistence/entities/CartItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/bff/persistence/entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/bff/persistence/repositories/CartItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/bff/persistence/repositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/src/main/java/com/example/bff/rest/contollers/CardController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/src/main/java/com/example/bff/rest/contollers/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/src/main/java/com/example/bff/rest/securityConfig/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rest/src/main/java/com/example/bff/rest/securityConfig/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/base/OperationInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/base/OperationInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/base/OperationProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/base/OperationProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/base/OperationResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/base/OperationResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/getItemProperties/GetItemPropertiesInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/item/getItemProperties/GetItemPropertiesInput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/getItemProperties/GetItemPropertiesOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/item/getItemProperties/GetItemPropertiesOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/getItemProperties/GetItemPropertiesOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/item/getItemProperties/GetBFFItemPropertiesOutput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/example/bff/domain/bffclient/StorageRestClientFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/example/bff/domain/bffclient/StorageRestClientFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/example/bff/domain/bffclient/ZooStoreRestClientFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/example/bff/domain/bffclient/ZooStoreRestClientFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/GetItemPropertiesOperationProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/GetItemPropertiesOperationProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/exceptions/NoSuchItemException.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/exceptions/NoSuchItemException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/persistence/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/example/bff/rest/BFFApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/example/bff/rest/BFFApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/example/bff/rest/contollers/BFFController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/example/bff/rest/contollers/BFFController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,13 +66,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -59,23 +100,35 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/KARA/IdeaProject/BFF/rest/src/main/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/KARA/IdeaProject/BFF/api/src/main/java/com/example/bff/api/operations/user/changeUserProperties&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;fe2b5a0e6c12a0f727a6ac66a5c2a23d&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;219277311ece04444b0dea1079366d56&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.bff.core" />
+      <recent name="com.example.bff.rest.config" />
+      <recent name="com.example.bff.persistence.entities" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\KARA\IdeaProject\BFF\api\src\main\java\com\example\bff\api\operations\user\changeUserProperties" />
       <recent name="C:\Users\KARA\IdeaProject\BFF\rest\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.bff.core.exceptions" />
       <recent name="com.example.bff.core" />
+      <recent name="com.example.bff.api.getItemByTagTitle" />
+      <recent name="com.example.bff.core.exceptions" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -116,7 +169,20 @@
       <workItem from="1690207825698" duration="687000" />
       <workItem from="1690266562011" duration="4778000" />
       <workItem from="1690273972768" duration="4290000" />
-      <workItem from="1690358002998" duration="616000" />
+      <workItem from="1690358002998" duration="1035000" />
+      <workItem from="1690368710821" duration="292000" />
+      <workItem from="1690370302395" duration="6832000" />
+      <workItem from="1690441719424" duration="1137000" />
+      <workItem from="1690444397236" duration="1743000" />
+      <workItem from="1690447385438" duration="67000" />
+      <workItem from="1690447470650" duration="4195000" />
+      <workItem from="1690452464172" duration="1287000" />
+      <workItem from="1690454386678" duration="9709000" />
+      <workItem from="1690540681016" duration="4176000" />
+      <workItem from="1690781491831" duration="2867000" />
+      <workItem from="1690784451005" duration="7148000" />
+      <workItem from="1690794321053" duration="16440000" />
+      <workItem from="1690873285029" duration="14259000" />
     </task>
     <task id="LOCAL-00001" summary="BFF ZooStore updates">
       <option name="closed" value="true" />
@@ -126,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1690208483854</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="BFF ZooStore updates">
+      <option name="closed" value="true" />
+      <created>1690367220665</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690367220665</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,11 +214,22 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/core/src/main/java/com/example/bff/core/GetItemPropertiesOperationProcessor.java</url>
-          <line>36</line>
+          <url>file://$PROJECT_DIR$/persistence/src/main/java/com/example/bff/persistence/entities/CartItem.java</url>
+          <line>31</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/GetItemsListByTagTitleOperationProcessor.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="feign.Target$HardCodedTarget" memberName="type" />
+        <PinnedItemInfo parentTag="feign.ReflectiveFeign$FeignInvocationHandler" memberName="target" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
