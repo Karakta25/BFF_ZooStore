@@ -9,4 +9,9 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 public class AddItemToCartOutput implements OperationResult {
+
+    private String itemId;
+    private Double totalPrice;  //ItemPrice*quantity
+    private Integer quantity;
+
 }

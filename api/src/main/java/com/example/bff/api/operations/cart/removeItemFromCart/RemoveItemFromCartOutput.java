@@ -1,4 +1,14 @@
 package com.example.bff.api.operations.cart.removeItemFromCart;
 
-public class RemoveItemFromCartOutput {
+import com.example.bff.api.operations.base.OperationResult;
+import lombok.*;
+
+@Getter
+@Setter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class RemoveItemFromCartOutput implements OperationResult {
+
+    private boolean success;
 }

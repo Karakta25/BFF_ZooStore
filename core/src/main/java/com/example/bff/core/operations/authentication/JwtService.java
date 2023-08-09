@@ -17,33 +17,10 @@ import java.time.temporal.ChronoUnit;
 @RequiredArgsConstructor
 @Component
 public class JwtService {
-
-   // private static final String SECRET_KEY = "A9E3F55F4B8217AD52AFEA58C8872";
     private final Duration TOKEN_VALIDITY = Duration.of(30, ChronoUnit.DAYS);
     private final ApplicationUserDetailsService applicationUserDetailsService;
-    //@Value("${jwt-secret}")
 
     private final String jwtSecret = "A9E3F55F4B8217AD52AFEA58C8872";
-//    public String extractUsername(String token) {
-//        return extractClaim(token, Claims::getSubject);
-//    }
-//
-//    public <T> T extractClaim(String token, Function<Claims, T> claimsResolver) {
-//        final Claims claims = extractAllClaims(token);
-//        return claimsResolver.apply(claims);
-//    }
-
-//    public String getEmail(String jwt) {
-//        DecodedJWT decoded = JWT.require(Algorithm.HMAC256(jwtSecret))
-//                .withClaimPresence("email")
-//                .build()
-//                .verify(jwt);
-//
-//        return decoded.getClaim("email").asString();
-//    }
-    //   public String generateToken(UserDetails userDetails) {
-    //     return generateToken(new HashMap<>(), userDetails);
-    //}
 
     public String generateJwt(LogInUserInput input) {
 
@@ -58,11 +35,6 @@ public class JwtService {
                 .sign(Algorithm.HMAC256(jwtSecret));
     }
 
-
-//    private Key getSignInKey() {
-//        byte[] keyBytes = Decoders.BASE64.decode(SECRET_KEY);
-//        return Keys.hmacShaKeyFor(keyBytes);
-//    }
         public String getEmail(String jwt) {
             DecodedJWT decoded = JWT.require(Algorithm.HMAC256(jwtSecret))
                 .withClaimPresence("email")

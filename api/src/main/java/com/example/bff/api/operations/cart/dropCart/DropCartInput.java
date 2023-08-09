@@ -1,4 +1,7 @@
 package com.example.bff.api.operations.cart.dropCart;
 
-public class DropCartInput {
+import com.example.bff.api.operations.base.OperationInput;
+
+public class DropCartInput implements OperationInput {
+
 }

@@ -1,4 +1,9 @@
 package com.example.bff.api.operations.cart.getAllItemsFromCart;
 
-public class GetAllItemsFromCartInput {
+import com.example.bff.api.operations.base.OperationInput;
+import lombok.*;
+
+@Builder
+public class GetAllItemsFromCartInput implements OperationInput {
+
 }

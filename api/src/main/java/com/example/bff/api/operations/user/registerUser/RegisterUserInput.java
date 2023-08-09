@@ -12,9 +12,14 @@ import lombok.*;
 @NoArgsConstructor
 public class RegisterUserInput implements OperationInput {
 
+    @Email
     private String email;
+    @NotBlank
     private String password;
+    @NotBlank
     private String firstName;
+    @NotBlank
     private String lastName;
+    @NotBlank
     private String phoneNumber;
 }

@@ -17,7 +17,7 @@ public class GetFullItemPropertiesOutput implements OperationResult {
     private String id;
     private String productName;
     private String description;
-    private String vendorId;
+    private String vendorName;
     private boolean archived;
     private Set<GetMultimediaPropertiesOutput> multimedia;
     private Set<GetTagPropertiesOutput> tags;

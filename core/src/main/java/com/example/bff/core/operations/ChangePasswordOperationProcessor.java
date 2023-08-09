@@ -23,9 +23,6 @@ public class ChangePasswordOperationProcessor implements ChangePasswordOperation
 
         User user = userRepository.findByEmail(input.getEmail()).orElseThrow(NoSuchUserException:: new);
 
-        if(!input.getEmail().equals(user.getEmail()))
-            throw new WrongUserEmailException();
-
         if(input.getOldPassword().isBlank())
             throw new WrongUserPasswordException();
 
@@ -34,7 +31,6 @@ public class ChangePasswordOperationProcessor implements ChangePasswordOperation
                 user.setPassword(passwordEncoder.encode(input.getNewPassword()));
         }
 
-        user.setEmail(input.getEmail());
 
         userRepository.save(user);
 

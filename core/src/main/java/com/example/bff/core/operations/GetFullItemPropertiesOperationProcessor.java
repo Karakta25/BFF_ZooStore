@@ -37,13 +37,11 @@ public class GetFullItemPropertiesOperationProcessor implements GetFullItemPrope
         GetItemByIdOutput item = zooStoreRestClient.getItemById(input.getItemId());
         GetItemStorageByIdOutput storageItem = zooStorageRestClient.getItemFromStorage(input.getItemId());
 
-
-
         return GetFullItemPropertiesOutput.builder()
                 .id(item.getId())
                 .productName(item.getProductName())
                 .description(item.getDescription())
-                .vendorId(item.getVendorId())
+                .vendorName(item.getVendorId())
                 .archived(item.isArchived())
                 .multimedia(item.getMultimedia())
                 .tags(item.getTags())

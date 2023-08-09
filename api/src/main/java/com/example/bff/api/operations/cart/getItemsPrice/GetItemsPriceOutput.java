@@ -1,4 +1,8 @@
 package com.example.bff.api.operations.cart.getItemsPrice;
 
-public class GetItemsPriceOutput {
+import com.example.bff.api.operations.base.OperationResult;
+import lombok.*;
+
+
+public class GetItemsPriceOutput implements OperationResult {
 }

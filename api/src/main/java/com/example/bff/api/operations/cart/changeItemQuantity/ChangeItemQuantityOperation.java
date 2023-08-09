@@ -1,4 +1,6 @@
 package com.example.bff.api.operations.cart.changeItemQuantity;
 
-public interface ChangeItemQuantityOperation {
+import com.example.bff.api.operations.base.OperationProcessor;
+
+public interface ChangeItemQuantityOperation  extends OperationProcessor<ChangeItemQuantityInput,ChangeItemQuantityOutput> {
 }

@@ -6,6 +6,9 @@ import com.example.bff.api.operations.item.getItemProperties.GetFullItemProperti
 import com.example.bff.api.operations.item.getItemsByTagTitle.GetItemsListByTagTitleInput;
 import com.example.bff.api.operations.item.getItemsByTagTitle.GetItemsListByTagTitleOperation;
 import com.example.bff.api.operations.item.getItemsByTagTitle.GetItemsListByTagTitleOutput;
+import com.example.bff.api.operations.payment.PaymentInput;
+import com.example.bff.api.operations.payment.PaymentOperation;
+import com.example.bff.api.operations.payment.PaymentOutput;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -17,6 +20,7 @@ public class BFFController {
 
     private final GetFullItemPropertiesOperation getFullItemPropertiesOperation;
     private final GetItemsListByTagTitleOperation getItemsListByTagTitleOperation;
+
 
     @GetMapping(path = "/itemById/{itemId}")
     public ResponseEntity<GetFullItemPropertiesOutput> getItemProperties(@PathVariable String itemId)
@@ -42,4 +46,5 @@ public class BFFController {
         GetItemsListByTagTitleOutput response = this.getItemsListByTagTitleOperation.process(input);
         return ResponseEntity.ok(response);
     }
+
 }

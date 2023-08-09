@@ -16,15 +16,22 @@ public class CartItem {
 
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    @Column(name = "id")
     private UUID id;
 
-    @Column(name = "itemId", nullable = false)
-    private String itemId;
+    @Column(nullable = false)
+    private UUID itemId;
 
-    @Column(name = "quantity", nullable = false)
+    @Column(nullable = false)
     private Integer quantity;
 
-    @Column(name = "price", nullable = false)
+    @Column(nullable = false)
     private Double price;
+
+    @Column(nullable = false)
+    private Integer warrantyDuration;
+
+    @ManyToOne
+    @JoinColumn(nullable = false)
+    private User user;
+
 }

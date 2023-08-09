@@ -1,4 +1,6 @@
 package com.example.bff.api.operations.cart.removeItemFromCart;
 
-public interface RemoveItemFromCartOperation {
+import com.example.bff.api.operations.base.OperationProcessor;
+
+public interface RemoveItemFromCartOperation extends OperationProcessor<RemoveItemFromCartInput,RemoveItemFromCartOutput> {
 }

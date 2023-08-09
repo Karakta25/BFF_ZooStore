@@ -17,11 +17,12 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping(path = "/user")
+@RequestMapping(path = "/user", produces = {MediaType.APPLICATION_JSON_VALUE} )
 @RequiredArgsConstructor
 public class UserController {
 
@@ -30,9 +31,9 @@ public class UserController {
     private final ChangePasswordOperation changePasswordOperation;
 
     @PostMapping
-    public ResponseEntity<RegisterUserOutput> registerUser(@RequestBody RegisterUserInput input)  {
+    public ResponseEntity<RegisterUserOutput> registerUser(@RequestBody @Valid RegisterUserInput input) {
 
-        RegisterUserOutput response =  registerUserOperation.process(input);
+        RegisterUserOutput response = registerUserOperation.process(input);
         return ResponseEntity.status(201).body(response);
     }
 
@@ -44,9 +45,12 @@ public class UserController {
 
     @PostMapping(path = "/login")
     public ResponseEntity<LogInUserOutput> logInUser(@RequestBody @Valid LogInUserInput input) {
-        LogInUserOutput result = this.logInUserOperation.process(input);
-        HttpHeaders headers = new HttpHeaders();
-        headers.add("Authorization", result.getJwt());
-        return new ResponseEntity<>(headers, HttpStatus.OK);
+        LogInUserOutput response = this.logInUserOperation.process(input);
+        return ResponseEntity.ok(response);
+    }
+
+    @GetMapping
+    public String hello() {
+        return "Thank you for your donation!";
     }
 }

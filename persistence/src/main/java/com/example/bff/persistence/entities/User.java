@@ -26,19 +26,18 @@ public class User {
     @Column(name = "password", nullable = false)
     private String password;
 
-    @Column(name = "firstName", nullable = false)
+    @Column(name = "first_name", nullable = false)
     private String firstName;
 
-    @Column(name = "lastName", nullable = false)
+    @Column(name = "last_name", nullable = false)
     private String lastName;
 
-    @Column(name = "phoneNumber", nullable = false)
+    @Column(name = "phone_number", nullable = false)
     private String phoneNumber;
 
-    @Column(name = "cardItem", nullable = false)
-    @OneToMany
-    private List<CartItem> card;
-
+    @Column(nullable = false)
+    @OneToMany(mappedBy = "user")
+    private List<CartItem> cart;
 
 
 }
