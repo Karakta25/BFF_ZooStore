@@ -4,89 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b1f126de-d075-42c5-b3c4-63f608ea8a8f" name="Changes" comment="Security and Cart updates">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/orderConfirmation/OrderConfirmationInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/orderConfirmation/OrderConfirmationOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/orderConfirmation/OrderConfirmationOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/payment/PaymentInput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/payment/PaymentOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/payment/PaymentOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/OrderConfirmationOperationProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/exceptions/InsufficientAvailabilityException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/exceptions/InsufficientFundsException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/PaymentOperationProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/cart/AddItemToCartOperationProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/cart/ChangeItemQuantityOperationProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/cart/DropCartOperationProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/cart/GetAllItemsFromCartOperationProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/cart/RemoveItemFromCartOperationProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest/src/main/java/com/example/bff/rest/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest/src/main/java/com/example/bff/rest/contollers/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest/src/main/java/com/example/bff/rest/handler/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest/src/test/java/com/example/bff/rest/controller/CartControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest/src/test/java/com/example/bff/rest/controller/OrderControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest/src/test/java/com/example/bff/rest/controller/UserControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rest/src/test/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restExport/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.flattened-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.flattened-pom.xml" afterDir="false" />
+    <list default="true" id="b1f126de-d075-42c5-b3c4-63f608ea8a8f" name="Changes" comment="README.md updates">
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/item/returnOrReplaceItem/ReturnOrReplaceItemInput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/item/returnOrReplaceItem/ReturnOrReplaceItemOperation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/item/returnOrReplaceItem/ReturnOrReplaceItemOutput.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/items/returnOrExchange/ReturnOrReplaceItemOperationProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/a50aa022-326d-44e6-ace0-d335f0fcce58.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a50aa022-326d-44e6-ace0-d335f0fcce58.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/.flattened-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api/.flattened-pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/addItemToCart/AddItemToCartInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/addItemToCart/AddItemToCartInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/addItemToCart/AddItemToCartOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/addItemToCart/AddItemToCartOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/changeItemQuantity/ChangeItemQuantityInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/changeItemQuantity/ChangeItemQuantityInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/changeItemQuantity/ChangeItemQuantityOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/changeItemQuantity/ChangeItemQuantityOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/changeItemQuantity/ChangeItemQuantityOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/changeItemQuantity/ChangeItemQuantityOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/dropCart/DropCartInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/dropCart/DropCartInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/dropCart/DropCartOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/dropCart/DropCartOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/dropCart/DropCartOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/dropCart/DropCartOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/getAllItemsFromCart/GetAllItemsFromCartInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/getAllItemsFromCart/GetAllItemsFromCartInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/getAllItemsFromCart/GetAllItemsFromCartOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/getAllItemsFromCart/GetAllItemsFromCartOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/getAllItemsFromCart/GetAllItemsFromCartOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/getAllItemsFromCart/GetAllItemsFromCartOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/getItemsPrice/GetItemsPriceInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/getItemsPrice/GetItemsPriceInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/getItemsPrice/GetItemsPriceOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/getItemsPrice/GetItemsPriceOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/getItemsPrice/GetItemsPriceOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/getItemsPrice/GetItemsPriceOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/removeItemFromCart/RemoveItemFromCartInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/removeItemFromCart/RemoveItemFromCartInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/removeItemFromCart/RemoveItemFromCartOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/removeItemFromCart/RemoveItemFromCartOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/removeItemFromCart/RemoveItemFromCartOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/removeItemFromCart/RemoveItemFromCartOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/item/getItemProperties/GetFullItemPropertiesOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/item/getItemProperties/GetFullItemPropertiesOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/user/changeUserProperties/ChangeUserPropertiesInput.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/user/changeUserProperties/ChangeUserPropertiesOperation.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/user/changeUserProperties/ChangeUserPropertiesOutput.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/user/registerUser/RegisterUserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/user/registerUser/RegisterUserInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/.flattened-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/.flattened-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/ChangePasswordOperationProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/ChangePasswordOperationProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/ChangeUserPropertiesOperationProcessor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/GetFullItemPropertiesOperationProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/GetFullItemPropertiesOperationProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/GetItemsListByTagTitleOperationProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/GetItemsListByTagTitleOperationProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/authentication/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/authentication/JwtService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/.flattened-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/domain/.flattened-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/.flattened-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/.flattened-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/example/bff/persistence/entities/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/bff/persistence/entities/CartItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/example/bff/persistence/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/bff/persistence/entities/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/example/bff/persistence/repositories/CartItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/bff/persistence/repositories/CartItemRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/persistence/src/main/java/com/example/bff/persistence/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/persistence/src/main/java/com/example/bff/persistence/repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/.flattened-pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest/.flattened-pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rest/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/example/bff/rest/contollers/BFFController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/example/bff/rest/contollers/BFFController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/example/bff/rest/contollers/CardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/example/bff/rest/contollers/CartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/example/bff/rest/contollers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/example/bff/rest/contollers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/example/bff/rest/securityConfig/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/example/bff/rest/securityConfig/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/OrderConfirmationOperationProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/OrderConfirmationOperationProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/GetFullItemPropertiesOperationProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/items/GetFullItemPropertiesOperationProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/GetItemsListByTagTitleOperationProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/items/GetItemsListByTagTitleOperationProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/PaymentOperationProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/example/bff/core/operations/payment/PaymentOperationProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/example/bff/rest/contollers/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/example/bff/rest/contollers/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/main/java/com/example/bff/rest/contollers/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/main/java/com/example/bff/rest/contollers/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rest/src/test/java/com/example/bff/rest/controller/OrderControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/rest/src/test/java/com/example/bff/rest/controller/OrderControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+      <option value="module" />
+    </option>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -109,34 +61,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/KARA/IdeaProject/BFF/api/src/main/java/com/example/bff/api/operations/user/changeUserProperties",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "6f78cecda1575798af6f6adab641ab32",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/KARA/IdeaProject/BFF/api/src/main/java/com/example/bff/api/operations/user/changeUserProperties&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;6f78cecda1575798af6f6adab641ab32&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.bff.core" />
@@ -158,7 +110,23 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.OrderControllerTest.orderConfirmation_ShouldReturn_StatusOk_WhenArgumentsAreValid">
+  <component name="RunManager" selected="Spring Boot.BFFApplication">
+    <configuration name="OrderControllerTest.addItemToCart_ShouldReturn_StatusOk_WhenArgumentsAreValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.bff.rest.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.bff.rest.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.example.bff.rest.controller.OrderControllerTest" />
+      <option name="METHOD_NAME" value="addItemToCart_ShouldReturn_StatusOk_WhenArgumentsAreValid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OrderControllerTest.orderConfirmation_ShouldReturn_StatusOk_WhenArgumentsAreValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest" />
       <extension name="coverage">
@@ -170,22 +138,6 @@
       <option name="PACKAGE_NAME" value="com.example.bff.rest.controller" />
       <option name="MAIN_CLASS_NAME" value="com.example.bff.rest.controller.OrderControllerTest" />
       <option name="METHOD_NAME" value="orderConfirmation_ShouldReturn_StatusOk_WhenArgumentsAreValid" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserControllerTest.loginUser_ShouldReturn_StatusForbidden_WhenArgumentsAreInvalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.bff.rest.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.bff.rest.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.example.bff.rest.controller.UserControllerTest" />
-      <option name="METHOD_NAME" value="loginUser_ShouldReturn_StatusForbidden_WhenArgumentsAreInvalid" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -238,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OrderControllerTest.orderConfirmation_ShouldReturn_StatusOk_WhenArgumentsAreValid" />
         <item itemvalue="Spring Boot.BFFApplication" />
+        <item itemvalue="JUnit.OrderControllerTest.addItemToCart_ShouldReturn_StatusOk_WhenArgumentsAreValid" />
+        <item itemvalue="JUnit.OrderControllerTest.orderConfirmation_ShouldReturn_StatusOk_WhenArgumentsAreValid" />
         <item itemvalue="JUnit.UserControllerTest.loginUser_ShouldReturns_StatusOk_WhenArgumentsAreValid" />
         <item itemvalue="JUnit.UserControllerTest.registerUser_ShouldReturn_BadRequest_WhenTheUserIsAlreadyRegistered" />
-        <item itemvalue="JUnit.UserControllerTest.loginUser_ShouldReturn_StatusForbidden_WhenArgumentsAreInvalid" />
       </list>
     </recent_temporary>
   </component>
@@ -283,6 +235,8 @@
       <workItem from="1691413800865" duration="1442000" />
       <workItem from="1691416230138" duration="3212000" />
       <workItem from="1691420481372" duration="51914000" />
+      <workItem from="1691609380118" duration="21782000" />
+      <workItem from="1691679264611" duration="60000" />
     </task>
     <task id="LOCAL-00001" summary="BFF ZooStore updates">
       <option name="closed" value="true" />
@@ -316,7 +270,23 @@
       <option name="project" value="LOCAL" />
       <updated>1690957389143</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Updates">
+      <option name="closed" value="true" />
+      <created>1691609914957</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1691609914957</updated>
+    </task>
+    <task id="LOCAL-00006" summary="README.md updates">
+      <option name="closed" value="true" />
+      <created>1691664075668</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1691664075668</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,21 +306,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="BFF ZooStore updates" />
     <MESSAGE value="Security and Cart updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="Security and Cart updates" />
+    <MESSAGE value="Updates" />
+    <MESSAGE value="README.md updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="README.md updates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/persistence/src/main/java/com/example/bff/persistence/entities/CartItem.java</url>
           <line>33</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/api/src/main/java/com/example/bff/api/operations/cart/addItemToCart/AddItemToCartInput.java</url>
-          <line>13</line>
-          <properties field="itemId" class="com.example.bff.api.operations.cart.addItemToCart.AddItemToCartInput" />
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
